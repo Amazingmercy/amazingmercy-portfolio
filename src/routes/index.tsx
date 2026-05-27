@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Briefcase, User, Wrench, Mail } from "lucide-react";
-import portrait from "../assets/portrait.jpg";
 import projBoardoverse from "../assets/project-boardoverse.jpg";
 import projEdubuddy from "../assets/project-edubuddy.jpg";
 import projEtds from "../assets/project-etds.jpg";

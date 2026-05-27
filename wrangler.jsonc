@@ -1,14 +1,11 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "amazingmercy-portfolio",
+  "name": "tanstack-start-app",
   "compatibility_date": "2025-09-24",
   "compatibility_flags": ["nodejs_compat"],
-  "main": "dist/server/server.js",
-  "build": {
-    "command": "npm run build"
-  },
-  "assets": {
-    "directory": "dist/client",
-    "html_handling": "none"
+  "main": "src/server.ts",
+  "alias": {
+    "tanstack-start-injected-head-scripts:b": "./node_modules/@tanstack/start-server-core/dist/virtual-modules/injected-head-scripts-b.mjs",
+    "tanstack-start-injected-head-scripts:v": "./node_modules/@tanstack/start-server-core/dist/virtual-modules/injected-head-scripts-v.mjs"
   }
 }

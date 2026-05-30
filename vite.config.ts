@@ -11,4 +11,10 @@ export default defineConfig({
   tanstackStart: {
     spa: { enabled: true },
   },
+
+  vite: {
+    server: {
+      allowedHosts: ["amazingmercy-portfolio.onrender.com"],
+    },
+  },
 });

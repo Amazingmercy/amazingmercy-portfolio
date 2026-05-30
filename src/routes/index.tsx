@@ -5,6 +5,7 @@ import projEdubuddy from "../assets/project-edubuddy.jpg";
 import projEtds from "../assets/project-etds.jpg";
 import projEcom from "../assets/project-ecommerce.jpg";
 import image from "../assets/team-real-1.jpg";
+import cvFile from "../assets/Current Mercy Amaefule  Resume.pdf";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -20,8 +21,7 @@ export const Route = createFileRoute("/")({
   }),
 });
 
-const CV_URL =
-  "https://amazingmercy-dev.onrender.com/images/Mercy_Amaefule_Resume(backend).pdf";
+const CV_URL = cvFile;
 const EMAIL = "amaefulmercy499@gmail.com";
 
 function Nav() {

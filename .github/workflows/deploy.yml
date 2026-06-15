@@ -30,12 +30,15 @@ jobs:
         run: npm run build
       
       - name: Add nojekyll
-        run: touch dist/.nojekyll
+        run: touch  dist/client/.nojekyll
+
+      - name: SPA Fallback
+        run: cp dist/client/index.html dist/client/404.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: dist/client
 
   deploy:
     needs: build

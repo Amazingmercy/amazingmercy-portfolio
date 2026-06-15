@@ -13,7 +13,7 @@ export default defineConfig({
   },
 
   vite: {
-    base: "/amazingmercy-portfolio",
+    base: "/amazingmercy-portfolio/",
     server: {
       allowedHosts: ["amazingmercy-portfolio.onrender.com"],
     },
